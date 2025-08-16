@@ -196,7 +196,7 @@ They let you configure a system with "product" objects that vary widely in struc
 and functionality. Configuration can be static (that is, specified at compile-time) or
 dynamic (atrun-time).
 
- * Abstract Factory
+ * [Abstract Factory](./abstract-factory/README.md)
  * [Builder](./builder/README.md)
  * [Factory Method](./factory-method/README.md)
  * [Prototype](./prototype/README.md)
@@ -222,11 +222,11 @@ is impossible with static class composition.
 
  * [Adapter](./adapter/README.md)
  * [Bridge](./bridge/README.md)
- * Composite
+ * [Composite](./composite/README.md)
  * [Decorator](./decorator/README.md)
  * [Facade](./facade/README.md)
- * Flyweight
- * Proxy
+ * [Flyweight](./flyweight/README.md)
+ * [Proxy](./proxy/README.md)
 
 ## Behavioral Patterns
 
@@ -247,12 +247,12 @@ instances of these classes.
 
  * [Chain of Responsibility](./chain-of-responsibility/README.md)
  * [Command](./command/README.md)
- * Interpreter
+ * [Interpreter](./interpreter/README.md)
  * [Iterator](./iterator/README.md)
- * Mediator
+ * [Mediator](./mediator/README.md)
  * [Memento](./memento/README.md)
  * [Observer](./observer/README.md)
- * State
+ * [State](./state/README.md)
  * [Strategy](./strategy/README.md)
  * [Template Method](./template-method/README.md)
- * Visitor
+ * [Visitor](./visitor/README.md)
