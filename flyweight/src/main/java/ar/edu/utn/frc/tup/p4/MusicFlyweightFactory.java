@@ -4,14 +4,31 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MusicFlyweightFactory {
+
     private static final Map<String, Artist> artists = new HashMap<>();
     private static final Map<String, Album> albums = new HashMap<>();
 
     public static Artist getArtist(String name) {
-        return artists.computeIfAbsent(name, Artist::new);
+        Artist artist = artists.get(name);
+
+        if (artist == null) {
+            artist = new Artist(name);
+            artists.put(name, artist);
+        }
+
+        return artist;
     }
 
     public static Album getAlbum(String title, Artist artist) {
-        return albums.computeIfAbsent(title + "::" + artist.getName(), key -> new Album(title, artist));
+        String key = title + "::" + artist.getName();
+
+        Album album = albums.get(key);
+
+        if (album == null) {
+            album = new Album(title, artist);
+            albums.put(key, album);
+        }
+
+        return album;
     }
 }

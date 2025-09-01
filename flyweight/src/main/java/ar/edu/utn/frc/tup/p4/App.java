@@ -9,7 +9,7 @@ public class App
     {
         System.out.println("--- Creating songs with shared data ---");
 
-        // Use the factory to get shared Artist and Album instances
+        // Use the flyweight factory to get shared Artist and Album instances
         Artist queenArtist = MusicFlyweightFactory.getArtist("Queen");
         Album aNightAtTheOpera = MusicFlyweightFactory.getAlbum("A Night at the Opera", queenArtist);
 
