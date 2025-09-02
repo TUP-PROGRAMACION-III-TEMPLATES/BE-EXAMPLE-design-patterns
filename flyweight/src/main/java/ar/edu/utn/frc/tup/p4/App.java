@@ -1,12 +1,7 @@
 package ar.edu.utn.frc.tup.p4;
 
-/**
- * Adapter Pattern
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
+public class App {
+    public static void main( String[] args ) {
         System.out.println("--- Creating songs with shared data ---");
 
         // Use the flyweight factory to get shared Artist and Album instances
